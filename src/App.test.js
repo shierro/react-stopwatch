@@ -1,8 +1,12 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('Renders initial Stopwatch elements successfully', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const startButton = screen.getByText(/start/i);
+  const timerElement = screen.getByText(/0/i);
+  const resetButton = screen.getByText(/reset/i);
+  expect(startButton).toBeInTheDocument();
+  expect(timerElement).toBeInTheDocument();
+  expect(resetButton).toBeInTheDocument();
 });

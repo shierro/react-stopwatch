@@ -11,3 +11,42 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.app {
+  background-color: gray;
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer-container {
+  opacity: 0.9;
+  background-color: lightgray;
+  padding: 20px;
+  flex-direction: column;
+  max-width: 300px;
+  border-radius: 15px;
+}
+
+.action-btn {
+  padding: 5px;
+  margin: 0 5px;
+}
+
+.start-btn {
+  background-color: lightgreen;
+}
+
+.reset-btn {
+  background-color: darkgray;
+  color: white;
+}
+
+.time {
+  font-size: 48px;
+}
