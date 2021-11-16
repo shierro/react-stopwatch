@@ -1,6 +1,24 @@
-# Getting Started with Create React App
+# React Stopwatch
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This mini project implements README Driven Development(RDD) & TDD on a simple stopwatch application.
+
+# Specs
+| Epic                                                            | User Story                                      | Acceptance Criteria                                                |
+|-----------------------------------------------------------------|-------------------------------------------------|--------------------------------------------------------------------|
+| As a user, I need to use a stopwatch to help me manage my time. | As a user, I need to start the stopwatch        | User should be able to start stopwatch                             |
+|                                                                 |                                                 | User should see the stopwatch running                              |
+|                                                                 |                                                 | User should see a "stop" button                                    |
+|                                                                 |                                                 | User should not see a "start" button                               |
+|                                                                 | As a user, I need to stop an active stopwatch   | User should be able to click "stop" button                         |
+|                                                                 |                                                 | User should see that the timer stopped                             |
+|                                                                 |                                                 | User should not see a "stop" button                                |
+|                                                                 |                                                 | User should see a "start" button                                   |
+|                                                                 | As a user, I need to resume a stopped stopwatch | User should be able to click "start" button on a stopped stopwatch |
+|                                                                 |                                                 | User should see the timer increasing again                         |
+|                                                                 | As a user, I need to reset the stopwatch        | User should be able to click "reset" button                        |
+|                                                                 |                                                 | User should see the timer reset to zero                            |
+|                                                                 |                                                 | User should see that the timer stopped                             |
+
 
 ## Available Scripts
 
