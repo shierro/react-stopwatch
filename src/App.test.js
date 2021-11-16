@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
 test('Renders initial Stopwatch elements successfully', () => {
@@ -9,4 +9,15 @@ test('Renders initial Stopwatch elements successfully', () => {
   expect(startButton).toBeInTheDocument();
   expect(timerElement).toBeInTheDocument();
   expect(resetButton).toBeInTheDocument();
+});
+
+test('Start Stopwatch successfully', () => {
+  render(<App />);
+  const startButton = screen.getByText(/START/i);
+  const timeElement = screen.getByTestId('time');
+  fireEvent.click(startButton);
+  const stopButton = screen.getByText(/STOP/i);
+  expect(stopButton).toBeInTheDocument();
+  expect(screen.queryByText(/START/i)).toBeNull();
+  expect(timeElement.TEXT_NODE).toBeGreaterThan(1);
 });
